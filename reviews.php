@@ -16,6 +16,7 @@
     $max_star       = ''; // The maximum star rating (max = 5)
     $api_key        = '';
 ?>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<?php echo $api_key; ?>&libraries=places"></script>
 <script>
     (function($) {
