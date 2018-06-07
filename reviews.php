@@ -126,13 +126,13 @@
         
         // fill in gold stars
         for (var i = 0; i < rating; i++) {
-        stars = stars+"<li><i class='star'></i></li>";
+        stars = stars+"<li class='star'>&#9733;</li>";
         };
 
         // fill in empty stars
         if(rating < 5){
         for (var i = 0; i < (5 - rating); i++) {
-            stars = stars+"<li><i class='star inactive'></i></li>";
+            stars = stars+"<li class='star inactive'>&#9733;</li>";
         };
         }
         stars = stars+"</ul></div>";
