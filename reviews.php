@@ -12,8 +12,8 @@
     $region         = '';
     $post_code      = '';
     $logo_path      = 'images/system/logo.png';
-    $min_star       = ''; // The minimum star rating (min = 1)
-    $max_star       = ''; // The maximum star rating (max = 5)
+    $min_star       = '1'; // The minimum star rating (min = 1)
+    $max_rows       = '5'; // The maximum number of results (max = 5)
     $api_key        = '';
 ?>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -27,7 +27,7 @@
             placeId:        '<?php echo $place_ID; ?>', 
             render:         ['reviews'], 
             min_rating:     <?php echo $min_star; ?>, 
-            max_rows:       <?php echo $min_star; ?>, 
+            max_rows:       <?php echo $max_rows; ?>, 
             rotateTime:     false
         };
 
