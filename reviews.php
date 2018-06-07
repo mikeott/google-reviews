@@ -1,7 +1,7 @@
 <?php 
     /*
         Configuration.
-        Note: You'll need a Google maps API key - requires both Maps JS API and Places API services enabled.
+        Note: You'll need a Google maps API key - requires both Maps JS and Places API services enabled.
     */
 
     $place_ID       = ''; // Get from: https://developers.google.com/places/place-id
