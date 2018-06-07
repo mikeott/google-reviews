@@ -3,9 +3,9 @@ Use the Google Places API to display Google business reviews on your website.
 
 **Note:** The JS was originally sourced from [Peledies](https://github.com/peledies) Google Places jQuery Plugin [(here)](https://github.com/peledies/google-places) although I've tweaked it a little with additional schema and less convoluted mark-up.
 
-This file (reviews.php) is more contained (not external JS, aside from the jQuery requirement) and also inludes a simple configuration via a bunch of PHP variables. You could just make it a server side include and not have to think about it.
+The file (reviews.php) is more contained (no external JS, aside from the jQuery requirement) and also inludes a simple configuration via a bunch of PHP variables. You could just make it a server side include and not have to think about it.
 
-**Requirements:** Google maps API key, with Maps JavaScript API and Places API both enabled via your Google API console.
+**Requirements:** Google maps API key, with Maps JavaScript API and Places API both enabled via your [Google API console](https://console.cloud.google.com/apis).
 
 **Pro tip:** Get your place ID from [here](https://developers.google.com/places/place-id).
 
