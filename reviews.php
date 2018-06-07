@@ -11,7 +11,7 @@
     $locality       = ''; // Example: Docklands (http://schema.org/addressLocality)
     $region         = '';
     $post_code      = '';
-    $logo_path      = 'images/system/logo.png'; // Can not be a SVG (thanks Google!)
+    $logo_path      = 'images/system/logo.png';
     $min_star       = ''; // The minimum star rating (min = 1)
     $max_star       = ''; // The maximum star rating (max = 5)
     $api_key        = '';
