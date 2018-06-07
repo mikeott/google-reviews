@@ -9,7 +9,7 @@ The file (reviews.php) is more contained (no external JS, aside from the jQuery 
 
 **Pro tip:** Get your place ID from [here](https://developers.google.com/places/place-id).
 
-##Limitations ##
+## Limitations ##
 
 The API will only allow you to return a maximum of five reviews, and these will always be limited to the reviews Google says are 'Most Relevant'.
 
@@ -19,11 +19,11 @@ This is confounded with another problem: If you want to return five reviews, and
 
 ![Screenshot](https://raw.githubusercontent.com/mikeott/google-reviews/master/doc-images/reviews.png)
 
-##Todo ##
+## Todo ##
 
 Presentation layer.
 
-##Styled example ##
+## Styled example ##
 
 An example of how you could style it:
 
