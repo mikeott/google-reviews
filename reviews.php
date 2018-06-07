@@ -84,25 +84,25 @@
         var filter_minimum_rating = function(reviews){
         for (var i = reviews.length -1; i >= 0; i--) {
             if(reviews[i].rating < plugin.settings.min_rating){
-            reviews.splice(i,1);
+                reviews.splice(i,1);
             }
         }
         return reviews;
         }
 
-        var renderReviews = function(reviews){
-        reviews = sort_by_date(reviews);
-        reviews = filter_minimum_rating(reviews);
-        var html = "";
-        var row_count = (plugin.settings.max_rows > 0)? plugin.settings.max_rows - 1 : reviews.length - 1;
-        // make sure the row_count is not greater than available records
-        row_count = (row_count > reviews.length-1)? reviews.length -1 : row_count;
-        for (var i = row_count; i >= 0; i--) {
-        var stars = renderStars(reviews[i].rating);
-        var date = convertTime(reviews[i].time);
-        html = html+"<div class='review-item' itemprop='review' itemscope itemtype='http://schema.org/Review'><img src='"+reviews[i].profile_photo_url+"'/><div class='review-inner'><meta itemprop='itemReviewed' content='http://schema.org/<?php echo $business_type; ?>' /><p class='review-text' itemprop='description'>"+reviews[i].text+"</p><div class='review-meta'><span class='review-author' itemprop='author'>"+reviews[i].author_name+"</span><span class='review-sep'>, </span><span class='review-date' itemprop='datePublished'>"+date+"</span></div>"+stars+"</div></div>"
-        };
-        $element.append(html);
+        var renderReviews = function(reviews) {
+            reviews = sort_by_date(reviews);
+            reviews = filter_minimum_rating(reviews);
+            var html = "";
+            var row_count = (plugin.settings.max_rows > 0)? plugin.settings.max_rows - 1 : reviews.length - 1;
+            // make sure the row_count is not greater than available records
+            row_count = (row_count > reviews.length-1)? reviews.length -1 : row_count;
+            for (var i = row_count; i >= 0; i--) {
+                var stars = renderStars(reviews[i].rating);
+                var date = convertTime(reviews[i].time);
+                html = html+"<div class='review-item' itemprop='review' itemscope itemtype='http://schema.org/Review'><img src='"+reviews[i].profile_photo_url+"'/><div class='review-inner'><meta itemprop='itemReviewed' content='http://schema.org/<?php echo $business_type; ?>' /><p class='review-text' itemprop='description'>"+reviews[i].text+"</p><div class='review-meta'><span class='review-author' itemprop='author'>"+reviews[i].author_name+"</span><span class='review-sep'>, </span><span class='review-date' itemprop='datePublished'>"+date+"</span></div>"+stars+"</div></div>"
+            };
+            $element.append(html);
         }
         
         var initRotation = function() {
@@ -121,29 +121,29 @@
         }
         }
 
-        var renderStars = function(rating){
-        var stars = "<div class='review-stars' itemprop='reviewRating' itemscope itemtype='http://schema.org/Rating'><meta itemprop='worstRating' content='1'/><meta itemprop='ratingValue' content='" + rating + "'/><meta itemprop='bestRating' content='5'/><ul>";
-        
-        // fill in gold stars
-        for (var i = 0; i < rating; i++) {
-        stars = stars+"<li class='star'>&#9733;</li>";
-        };
+        var renderStars = function(rating) {
+            var stars = "<div class='review-stars' itemprop='reviewRating' itemscope itemtype='http://schema.org/Rating'><meta itemprop='worstRating' content='1'/><meta itemprop='ratingValue' content='" + rating + "'/><meta itemprop='bestRating' content='5'/><ul>";
 
-        // fill in empty stars
-        if(rating < 5){
-        for (var i = 0; i < (5 - rating); i++) {
-            stars = stars+"<li class='star inactive'>&#9733;</li>";
-        };
-        }
-        stars = stars+"</ul></div>";
-        return stars;
+            // fill in gold stars
+            for (var i = 0; i < rating; i++) {
+                stars = stars+"<li class='star'>&#9733;</li>";
+            };
+
+            // fill in empty stars
+            if(rating < 5){
+                for (var i = 0; i < (5 - rating); i++) {
+                    stars = stars+"<li class='star inactive'>&#9733;</li>";
+                };
+            }
+            stars = stars+"</ul></div>";
+            return stars;
         }
 
-        var convertTime = function(UNIX_timestamp){
-        var a = new Date(UNIX_timestamp * 1000);
-        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        var time = months[a.getMonth()] + ' ' + a.getDate() + ', ' + a.getFullYear();
-        return time;
+        var convertTime = function(UNIX_timestamp) {
+            var a = new Date(UNIX_timestamp * 1000);
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var time = months[a.getMonth()] + ' ' + a.getDate() + ', ' + a.getFullYear();
+            return time;
         }
 
         plugin.init();
