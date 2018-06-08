@@ -34,3 +34,7 @@ Presentation layer.
 An example of how you could style it:
 
 ![Styled](https://raw.githubusercontent.com/mikeott/google-reviews/master/doc-images/example-styled.png)
+
+# License
+
+MIT FTW! (https://opensource.org/licenses/MIT)
