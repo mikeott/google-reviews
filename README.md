@@ -21,7 +21,7 @@ This is confounded with another problem: If you want to return five reviews, and
 
 **For example:** As you can see in the [Perth Airport Google Reviews](https://goo.gl/vYCorg) (screenshot below), when sorted by 'Most Relevant' only two of the first five reviews have 5 Stars. And so if you want to only show reviews with 5 Stars, then only those two reviews will be returned. It appears that for whatever reason the Places API won't attempt to look beyond the five most relevant reviews, and so that's what we're limited to.
 
-In a situation like this it may be preferable to make the $min_star value 3 instead, which means the API will look for all 'Most Relevant' reviews from 3 to 5 Stars (which in the case of Perth Airport below would mean three reviews would be returned).
+In a situation like this it may be preferable to make the `$min_star` value 3 instead, which means the API will look for all 'Most Relevant' reviews from 3 to 5 Stars (which in the case of Perth Airport below would mean three reviews would be returned).
 
 ![Screenshot](https://raw.githubusercontent.com/mikeott/google-reviews/master/doc-images/reviews.png)
 
