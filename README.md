@@ -7,7 +7,10 @@ The file (reviews.php) is more contained (no external JS, aside from the jQuery 
 
 **Requirements:** Google maps API key, with Maps JavaScript API and Places API both enabled via your [Google API console](https://console.cloud.google.com/apis).
 
-**Pro tip:** Get your place ID from [here](https://developers.google.com/places/place-id).
+**Pro tips:** 
+
+..* Get your place ID from [here](https://developers.google.com/places/place-id).
+..* Remove `<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>` if your project already uses jQuery.
 
 ## Limitations ##
 
