@@ -40,7 +40,7 @@
 
         plugin.init = function() {
         plugin.settings = $.extend({}, defaults, options);
-        $element.html("<div id='map-plug'></div>"); // create a plug for google to load data into
+        $element.html("<div id='reviews'></div>"); // create a plug for google to load data into
         initialize_place(function(place){
             plugin.place_data = place;
             // render specified sections
@@ -54,7 +54,7 @@
         }
 
         var initialize_place = function(c){
-        var map = new google.maps.Map(document.getElementById('map-plug'));
+        var map = new google.maps.Map(document.getElementById('reviews'));
 
         var request = {
             placeId: plugin.settings.placeId
