@@ -44,7 +44,7 @@
         initialize_place(function(place){
             plugin.place_data = place;
             // render specified sections
-            if(plugin.settings.render.indexOf('reviews') > -1){
+            if(plugin.settings.render.indexOf('the-reviews') > -1){
             renderReviews(plugin.place_data.reviews);
             if(!!plugin.settings.rotateTime) {
                 initRotation();
@@ -54,7 +54,7 @@
         }
 
         var initialize_place = function(c){
-        var map = new google.maps.Map(document.getElementById('reviews'));
+        var map = new google.maps.Map(document.getElementById('the-reviews'));
 
         var request = {
             placeId: plugin.settings.placeId
