@@ -40,11 +40,11 @@
 
         plugin.init = function() {
         plugin.settings = $.extend({}, defaults, options);
-        $element.html("<div id='reviews'></div>"); // create a plug for google to load data into
+        $element.html("<div id='the-reviews'></div>"); // create a plug for google to load data into
         initialize_place(function(place){
             plugin.place_data = place;
             // render specified sections
-            if(plugin.settings.render.indexOf('the-reviews') > -1){
+            if(plugin.settings.render.indexOf('reviews') > -1){
             renderReviews(plugin.place_data.reviews);
             if(!!plugin.settings.rotateTime) {
                 initRotation();
