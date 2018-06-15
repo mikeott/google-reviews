@@ -11,7 +11,7 @@ The file (reviews.php) is more contained (no external JS, aside from the jQuery 
 
 * Get your place ID from [here](https://developers.google.com/places/place-id).
 
-* Remove `<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>` if your project already uses jQuery.
+* Remove `<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>` from reviews.php if your project already uses jQuery.
 
 ## Limitations ##
 
