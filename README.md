@@ -9,7 +9,7 @@ The file (reviews.php) is more contained (no external JS, aside from the jQuery 
 
 **Pro tips:** 
 
-* Get your place ID from [here](https://developers.google.com/places/place-id).
+* Get your place ID from [here](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder).
 
 * Remove `<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>` from reviews.php if your project already uses jQuery.
 
