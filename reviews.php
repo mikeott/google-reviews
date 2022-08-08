@@ -179,3 +179,4 @@
         $("#google-reviews").googlePlaces({});
     });
 </script>
+<link rel="stylesheet" id="google-reviews-css" href="google-reviews.css" type="text/css" media="all" />
