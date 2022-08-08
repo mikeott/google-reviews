@@ -4,7 +4,7 @@
         Note: You'll need a Google maps API key - requires both Maps JS and Places API services enabled.
     */
 
-    $place_ID       = ''; // Get from: https://developers.google.com/places/place-id
+    $place_ID       = ''; // Get from: https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
     $business_type  = ''; // Example: FinancialService (http://schema.org)
     $business_name  = '';
     $street_address = '';
