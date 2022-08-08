@@ -25,16 +25,6 @@ In a situation like this it may be preferable to make the `$min_star` value 3 in
 
 ![Screenshot](https://raw.githubusercontent.com/mikeott/google-reviews/master/doc-images/reviews.png)
 
-## Todo ##
-
-Presentation layer.
-
-## Styled example ##
-
-An example of how you could style it:
-
-![Styled](https://raw.githubusercontent.com/mikeott/google-reviews/master/doc-images/example-styled.png)
-
 # License
 
 MIT FTW! (https://opensource.org/licenses/MIT)
