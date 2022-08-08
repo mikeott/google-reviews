@@ -1,0 +1,39 @@
+/* Google Reviews - basic CSS */
+#google-reviews {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .review-item {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 25px;
+
+        /* Three columns */
+        @media only screen and (min-width: 960px) {
+            width: calc(33.3333% - 50px);
+        }
+
+        /* User image */
+        img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                color: orange; /* Star colour */
+            }
+        }
+    }
+}
